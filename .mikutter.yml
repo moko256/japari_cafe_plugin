@@ -1,0 +1,10 @@
+---
+slug: :japari_cafe_plugin
+depends:
+  mikutter: 3.0.7
+  plugin:
+  - gtk
+version: '1.0'
+author: 
+name: "ジャパリカフェPlugin"
+description: "ふわああぁ！いらっしゃぁい！よぉこそぉ↑mikutterへ～！どうぞどうぞ！ゆっぐりしてってぇ！いやま゛っ↓てたよぉ！やっとユーザーさんが来てくれたゆぉ！嬉しいなあ！ねえなんにぃ投稿するぅ？色々あるよぉ、これね、ツイートって言うんだってぇハ↓カセに教えてもらったンの！"
