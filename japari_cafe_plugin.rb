@@ -44,7 +44,8 @@ Plugin.create(:japari_cafe_plugin) do
     if dialog.run == Gtk::Dialog::RESPONSE_OK
       text = "ふわああぁ！いらっしゃぁい！よぉこそぉ↑#{where.text}へ～！どうぞどうぞ！ゆっぐりしてってぇ！いやま゛っ↓てたよぉ！やっと#{who.text}が来てくれたゆぉ！嬉しいなあ！ねえなんにぃ#{what.text}るぅ？色々あるよぉ、これね、#{drink.text}って言うんだってぇハ↓カセに教えてもらったンの！"
       if Gtk::Dialog::confirm(text)
-        Service.primary.post(:message => text)
+        world, = Plugin.filtering(:world_current, nil)
+        compose(world, body: text)
       end
     end
     dialog.destroy
